@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080a12" />
+
+  <title>QA Engineer Portfolio | Quality Assurance Specialist</title>
+  <meta
+    name="description"
+    content="Premium QA Engineer portfolio featuring software testing skills, projects, bug reports, test cases, experience, certificates and contact information."
+  />
+  <meta name="keywords" content="QA Engineer, Quality Assurance, Manual Testing, API Testing, Postman, Jira, Software Tester, Portfolio" />
+  <meta name="author" content="QA Engineer" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="QA Engineer Portfolio" />
+  <meta property="og:description" content="Building reliable software through thoughtful testing and quality engineering." />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/090b14/8b5cf6&text=QA+Engineer+Portfolio" />
+  <meta property="og:url" content="https://your-domain.vercel.app" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="QA Engineer Portfolio" />
+  <meta name="twitter:description" content="Premium QA Engineer portfolio and testing showcase." />
+
+  <link rel="canonical" href="https://your-domain.vercel.app" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%238b5cf6'/%3E%3Cpath d='M17 32l9 9 21-22' fill='none' stroke='white' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Friend Name",
+    "jobTitle": "Quality Assurance Engineer",
+    "url": "https://your-domain.vercel.app",
+    "sameAs": [
+      "https://www.linkedin.com/",
+      "https://github.com/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <noscript>
+    <div class="noscript-message">Please enable JavaScript to view this portfolio.</div>
+  </noscript>
+
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-mark">
+      <span></span><span></span><span></span>
+    </div>
+    <p>Validating experience...</p>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-icon"><i data-lucide="check-check"></i></span>
+        <span id="brandName">QA<span>.</span></span>
+      </a>
+
+      <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Open navigation" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#showcase">QA Showcase</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Switch theme">
+          <i data-lucide="sun" class="theme-icon theme-icon-sun"></i>
+          <i data-lucide="moon" class="theme-icon theme-icon-moon"></i>
+        </button>
+        <a class="button button-small button-outline" href="assets/resume.pdf" download>
+          <i data-lucide="download"></i>
+          Resume
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="portfolioPage">
+    <section class="hero section" id="home">
+      <div class="hero-orb hero-orb-one"></div>
+      <div class="hero-orb hero-orb-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            <span id="availabilityText">Available for QA opportunities</span>
+          </div>
+
+          <h1>
+            I test beyond the
+            <span class="gradient-text">happy path.</span>
+          </h1>
+
+          <p class="hero-intro">
+            Hi, I'm <strong id="heroName">Your Friend Name</strong> — a
+            <span id="heroTitle">Quality Assurance Engineer</span> focused on transforming
+            complex products into stable, intuitive and release-ready experiences.
+          </p>
+
+          <div class="hero-typing" aria-label="Testing specialties">
+            <span>Specialized in</span>
+            <strong id="typingText">Manual Testing</strong>
+            <span class="typing-caret">|</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary magnetic" href="#projects">
+              Explore My Work
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+            <a class="button button-glass magnetic" href="#contact">
+              Let's Connect
+              <i data-lucide="message-circle"></i>
+            </a>
+          </div>
+
+          <div class="hero-proof">
+            <div class="proof-avatars" aria-hidden="true">
+              <span>QA</span><span>API</span><span>UX</span>
+            </div>
+            <div>
+              <div class="proof-stars">★★★★★</div>
+              <p>Quality-first mindset across every release</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="profile-glow"></div>
+
+          <article class="profile-card glass-card">
+            <div class="profile-card-top">
+              <span class="window-dot"></span>
+              <span class="window-dot"></span>
+              <span class="window-dot"></span>
+              <span class="profile-card-label">qa-engineer.profile</span>
+            </div>
+
+            <div class="profile-avatar-wrap">
+              <div class="profile-avatar" id="profileAvatar">
+                <span id="profileInitials">QAE</span>
+              </div>
+              <span class="verified-badge" aria-label="Verified QA profile">
+                <i data-lucide="badge-check"></i>
+              </span>
+            </div>
+
+            <h2 id="cardName">Your Friend Name</h2>
+            <p id="cardRole">Quality Assurance Engineer</p>
+
+            <div class="profile-tags">
+              <span>Quality Driven</span>
+              <span>Detail Oriented</span>
+              <span>User Focused</span>
+            </div>
+
+            <div class="quality-score">
+              <div class="score-ring">
+                <svg viewBox="0 0 120 120" aria-hidden="true">
+                  <circle class="score-ring-bg" cx="60" cy="60" r="50"></circle>
+                  <circle class="score-ring-value" cx="60" cy="60" r="50"></circle>
+                </svg>
+                <div>
+                  <strong>98%</strong>
+                  <span>Quality</span>
+                </div>
+              </div>
+
+              <div class="score-copy">
+                <span class="mini-label">Release Confidence</span>
+                <strong>Production Ready</strong>
+                <p>Clear reports. Reliable coverage. Better user experiences.</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="floating-chip floating-chip-one">
+            <i data-lucide="bug"></i>
+            <span><strong>0</strong> Critical Escape</span>
+          </div>
+
+          <div class="floating-chip floating-chip-two">
+            <i data-lucide="shield-check"></i>
+            <span><strong>100%</strong> Ownership</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-indicator" href="#about" aria-label="Scroll to about section">
+        <span>Scroll to inspect</span>
+        <i data-lucide="arrow-down"></i>
+      </a>
+    </section>
+
+    <section class="trust-strip" aria-label="Testing specialties">
+      <div class="marquee">
+        <div class="marquee-track" id="marqueeTrack"></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">01 / About</span>
+            <h2>Quality is not a phase.<br /><span>It is a habit.</span></h2>
+          </div>
+          <p id="aboutSummary">
+            I approach testing as product thinking: understand the user, challenge assumptions,
+            identify risks early and help teams release with confidence.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-story glass-card reveal">
+            <span class="card-index">01</span>
+            <h3>Professional Summary</h3>
+            <p id="professionalSummary"></p>
+            <div class="quote-card">
+              <i data-lucide="quote"></i>
+              <p id="qaPhilosophy"></p>
+            </div>
+          </article>
+
+          <article class="about-story glass-card reveal">
+            <span class="card-index">02</span>
+            <h3>Career Objective</h3>
+            <p id="careerObjective"></p>
+            <ul class="check-list">
+              <li><i data-lucide="check"></i><span>Prevent defects before production</span></li>
+              <li><i data-lucide="check"></i><span>Create clear and actionable documentation</span></li>
+              <li><i data-lucide="check"></i><span>Represent the end user in every discussion</span></li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="stats-grid" id="statsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">02 / Skills</span>
+            <h2>A testing toolkit built for<br /><span>real product quality.</span></h2>
+          </div>
+          <p>
+            Practical testing capabilities across web applications, APIs, data validation,
+            collaboration and release verification.
+          </p>
+        </div>
+
+        <div class="skills-toolbar reveal">
+          <div class="skill-filter" id="skillFilters"></div>
+          <div class="skills-count"><span id="visibleSkillCount">0</span> capabilities</div>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">03 / Experience</span>
+            <h2>Experience measured in<br /><span>impact, not activity.</span></h2>
+          </div>
+          <p>
+            A timeline of hands-on testing ownership, collaboration and measurable quality improvements.
+          </p>
+        </div>
+
+        <div class="timeline" id="experienceTimeline"></div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">04 / Projects</span>
+            <h2>Products tested with<br /><span>curiosity and discipline.</span></h2>
+          </div>
+          <p>
+            Selected QA projects demonstrating functional coverage, edge-case thinking,
+            defect communication and release ownership.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">05 / QA Workflow</span>
+            <h2>From requirement to release,<br /><span>every signal matters.</span></h2>
+          </div>
+          <p>
+            Select a workflow stage to understand how quality is built continuously.
+          </p>
+        </div>
+
+        <div class="workflow-shell glass-card reveal">
+          <div class="workflow-line" aria-hidden="true"><span id="workflowLineProgress"></span></div>
+          <div class="workflow-steps" id="workflowSteps"></div>
+          <div class="workflow-detail" id="workflowDetail" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="showcase">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">06 / QA Showcase</span>
+            <h2>Documentation that makes<br /><span>quality visible.</span></h2>
+          </div>
+          <p>
+            Examples of clear bug reporting and structured test-case documentation.
+          </p>
+        </div>
+
+        <div class="showcase-tabs reveal" role="tablist" aria-label="QA showcase tabs">
+          <button class="showcase-tab active" data-showcase="bugs" role="tab" aria-selected="true">
+            <i data-lucide="bug"></i> Bug Reports
+          </button>
+          <button class="showcase-tab" data-showcase="testcases" role="tab" aria-selected="false">
+            <i data-lucide="table-2"></i> Test Cases
+          </button>
+        </div>
+
+        <div class="showcase-panel active" id="bugsPanel">
+          <div class="bug-grid" id="bugGrid"></div>
+        </div>
+
+        <div class="showcase-panel" id="testcasesPanel">
+          <div class="testcase-toolbar">
+            <label class="search-box">
+              <i data-lucide="search"></i>
+              <input id="testCaseSearch" type="search" placeholder="Search test cases..." />
+            </label>
+            <span id="testCaseCount"></span>
+          </div>
+
+          <div class="table-wrap">
+            <table class="testcase-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Scenario</th>
+                  <th>Precondition</th>
+                  <th>Test Steps</th>
+                  <th>Expected Result</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="testCaseTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="resume-grid">
+          <div class="resume-copy reveal">
+            <span class="section-kicker">07 / Resume</span>
+            <h2>A closer look at my<br /><span>QA journey.</span></h2>
+            <p>
+              View the resume directly, download a copy or open it in a separate tab for printing.
+            </p>
+
+            <div class="resume-actions">
+              <a class="button button-primary" href="assets/resume.pdf" download>
+                <i data-lucide="download"></i>
+                Download Resume
+              </a>
+              <a class="button button-glass" href="assets/resume.pdf" target="_blank" rel="noopener">
+                <i data-lucide="printer"></i>
+                Open & Print
+              </a>
+            </div>
+
+            <div class="resume-note">
+              <i data-lucide="info"></i>
+              <p>
+                To update this section, replace <code>assets/resume.pdf</code> with your friend's
+                actual resume using the same filename.
+              </p>
+            </div>
+          </div>
+
+          <div class="resume-preview glass-card reveal">
+            <div class="resume-preview-top">
+              <span>resume.pdf</span>
+              <a href="assets/resume.pdf" target="_blank" rel="noopener" aria-label="Open resume">
+                <i data-lucide="maximize-2"></i>
+              </a>
+            </div>
+            <iframe
+              src="assets/resume.pdf#toolbar=0&navpanes=0"
+              title="QA Engineer resume preview"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="certificates">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">08 / Certificates</span>
+            <h2>Continuous learning,<br /><span>verified.</span></h2>
+          </div>
+          <p>
+            Certifications and structured learning that strengthen testing fundamentals and technical awareness.
+          </p>
+        </div>
+
+        <div class="certificates-grid" id="certificatesGrid"></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-orb"></div>
+
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="section-kicker">09 / Contact</span>
+          <h2>Have a product that deserves<br /><span>better quality?</span></h2>
+          <p>
+            Let's discuss QA opportunities, testing challenges or how thoughtful quality assurance
+            can improve your next release.
+          </p>
+
+          <div class="contact-links" id="contactLinks"></div>
+        </div>
+
+        <form class="contact-form glass-card reveal" id="contactForm">
+          <div class="form-row">
+            <label>
+              <span>Your name</span>
+              <input type="text" name="name" placeholder="John Doe" required />
+            </label>
+            <label>
+              <span>Email address</span>
+              <input type="email" name="email" placeholder="john@company.com" required />
+            </label>
+          </div>
+
+          <label>
+            <span>Subject</span>
+            <input type="text" name="subject" placeholder="QA opportunity / Project discussion" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Tell me about the opportunity..." required></textarea>
+          </label>
+
+          <button class="button button-primary form-submit" type="submit">
+            Send Message
+            <i data-lucide="send"></i>
+          </button>
+
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <section class="not-found" id="notFoundPage" hidden>
+    <div class="not-found-card glass-card">
+      <span>404</span>
+      <h1>This test case did not pass.</h1>
+      <p>The requested page does not exist, but the portfolio is working perfectly.</p>
+      <a class="button button-primary" href="/">Return Home</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="#home">
+          <span class="brand-icon"><i data-lucide="check-check"></i></span>
+          <span>QA<span>.</span></span>
+        </a>
+        <p>Designed with precision. Tested with purpose.</p>
+      </div>
+
+      <div class="footer-center">
+        <span>© <span id="currentYear"></span> <span id="footerName">Your Friend Name</span></span>
+      </div>
+
+      <a class="back-to-top" href="#home">
+        Back to top
+        <i data-lucide="arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>
