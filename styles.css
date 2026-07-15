@@ -3166,3 +3166,32 @@ html[data-theme="light"] .eyebrow {
     animation: none !important;
   }
 }
+.cursor-glow,
+.particle-canvas {
+  display: none !important;
+}
+
+.glass-card,
+.site-header,
+.site-header.scrolled {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.hero-orb,
+.profile-glow,
+.floating-chip,
+.marquee-track,
+.scroll-indicator svg,
+.status-dot::after {
+  animation: none !important;
+}
+
+.reveal {
+  transform: translateY(16px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
