@@ -306,7 +306,7 @@ function initializeIdentity() {
 
 
   // Resume and profile photo can be added later without breaking the website.
-  const resumeAvailable = false;
+  const resumeAvailable = true;
   if (!resumeAvailable) {
     document.body.classList.add("resume-unavailable");
     $$('a[href="assets/resume.pdf"]').forEach((link) => {
