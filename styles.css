@@ -3195,3 +3195,194 @@ html[data-theme="light"] .eyebrow {
 html {
   scroll-behavior: smooth;
 }
+.nav-links a,
+.brand-icon,
+.skill-icon,
+.stat-icon,
+.certificate-icon,
+.contact-link-icon {
+  transition:
+    transform .32s var(--hover-ease),
+    box-shadow .32s var(--hover-ease),
+    border-color .32s ease,
+    background-color .32s ease,
+    color .32s ease,
+    opacity .32s ease;
+}
+
+/* Premium card lift */
+@media (hover: hover) and (pointer: fine) {
+  .skill-card:hover,
+  .project-card:hover,
+  .bug-card:hover,
+  .certificate-card:hover,
+  .stat-card:hover,
+  .timeline-card:hover,
+  .profile-card:hover,
+  .quote-card:hover,
+  .resume-preview:hover,
+  .workflow-shell:hover,
+  .showcase-panel:hover {
+    transform: translateY(-8px) scale(1.012);
+    border-color: rgba(139, 92, 246, .42);
+    box-shadow: var(--hover-shadow);
+  }
+
+  /* Icon pop on card hover */
+  .skill-card:hover .skill-icon,
+  .stat-card:hover .stat-icon,
+  .certificate-card:hover .certificate-icon,
+  .contact-link:hover .contact-link-icon {
+    transform: translateY(-3px) rotate(-5deg) scale(1.08);
+    box-shadow: 0 10px 24px rgba(139, 92, 246, .22);
+  }
+
+  /* Buttons */
+  .button:hover,
+  .form-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(139, 92, 246, .28);
+  }
+
+  .button:active,
+  .form-submit:active,
+  .icon-button:active {
+    transform: translateY(0) scale(.97);
+  }
+
+  .button-primary:hover {
+    filter: brightness(1.08);
+  }
+
+  .button-outline:hover,
+  .button-glass:hover {
+    border-color: rgba(103, 232, 249, .5);
+    background: rgba(103, 232, 249, .07);
+  }
+
+  /* Contact rows */
+  .contact-link:hover {
+    transform: translateX(7px);
+    border-color: rgba(34, 211, 238, .34);
+    background: rgba(34, 211, 238, .055);
+  }
+
+  /* Navigation underline animation */
+  .nav-links a {
+    position: relative;
+  }
+
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transform: translateX(-50%);
+    transition: width .28s var(--hover-ease);
+  }
+
+  .nav-links a:hover {
+    color: var(--text);
+    transform: translateY(-2px);
+  }
+
+  .nav-links a:hover::after,
+  .nav-links a.active::after {
+    width: 75%;
+  }
+
+  /* Links and tabs */
+  .project-link:hover,
+  .filter-button:hover,
+  .showcase-tab:hover {
+    transform: translateY(-2px);
+    border-color: rgba(139, 92, 246, .4);
+  }
+
+  .project-link:hover svg,
+  .button:hover svg,
+  .contact-link:hover svg {
+    transform: translateX(3px);
+  }
+
+  .project-link svg,
+  .button svg,
+  .contact-link svg {
+    transition: transform .28s var(--hover-ease);
+  }
+
+  /* Avatar and brand */
+  .profile-avatar-wrap:hover .profile-avatar {
+    transform: scale(1.045) rotate(1deg);
+  }
+
+  .profile-avatar {
+    transition: transform .4s var(--hover-ease);
+  }
+
+  .brand:hover .brand-icon {
+    transform: rotate(-8deg) scale(1.08);
+    box-shadow: 0 0 22px rgba(139, 92, 246, .3);
+  }
+
+  /* Table row feedback */
+  .testcase-table tbody tr {
+    transition: background-color .22s ease, transform .22s ease;
+  }
+
+  .testcase-table tbody tr:hover {
+    background: rgba(139, 92, 246, .055);
+    transform: translateX(3px);
+  }
+}
+
+/* Small ambient motion—very light and no scroll-loop */
+.hero-orb-one {
+  animation: soft-float-one 8s ease-in-out infinite alternate !important;
+}
+
+.hero-orb-two {
+  animation: soft-float-two 10s ease-in-out infinite alternate !important;
+}
+
+.status-dot::after {
+  animation: status-pulse 2.2s ease-out infinite !important;
+}
+
+@keyframes soft-float-one {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(18px, -14px, 0) scale(1.04); }
+}
+
+@keyframes soft-float-two {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(-16px, 12px, 0) scale(1.035); }
+}
+
+@keyframes status-pulse {
+  0%   { transform: scale(1); opacity: .55; }
+  70%  { transform: scale(2.15); opacity: 0; }
+  100% { transform: scale(2.15); opacity: 0; }
+}
+
+/* Accessibility and mobile performance */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-orb-one,
+  .hero-orb-two,
+  .status-dot::after {
+    animation: none !important;
+  }
+}
